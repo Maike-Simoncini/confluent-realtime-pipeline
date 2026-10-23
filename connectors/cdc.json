@@ -1,0 +1,19 @@
+{
+  "name": "PostgresCdcSourceV2",
+  "config": {
+    "connector.class": "io.confluent.connect.postgres.PostgresCdcSourceV2",
+    "tasks.max": "1",
+    "database.hostname": "${env.POSTGRES_HOST}",
+    "database.port": "${env.POSTGRES_PORT}",
+    "database.user": "${env.POSTGRES_USER}",
+    "database.password": "${env.POSTGRES_PASSWORD}",
+    "database.dbname": "${env.POSTGRES_DB}",
+    "plugin.name": "pgoutput",
+    "slot.name": "debezium_slot_desafio",
+    "publication.name": "debezium_pub_desafio",
+    "table.include.list": "public.customers,public.accounts,public.cards,public.merchants,public.transactions",
+    "heartbeat.interval.ms": "60000",
+    "decimal.handling.mode": "precise",
+    "output.data.format": "AVRO"
+  }
+}
