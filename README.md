@@ -78,6 +78,9 @@ Compatibility: SUCCESS (Campo novo aceito com valor default)
  * Custos: Otimização do cluster Basic e uso de retenção de tópicos adequada para evitar cobranças excedentes de armazenamento.
  * Confiabilidade: Garantia de idempotência implementada no código consumidor para mitigar entrega at-least-once.
 
+💰 Custo Total
+ * Custo estimado do período de testes: <US$ 2.50> (Baseado no consumo por hora do cluster Basic e do Confluent Flink Serverless).
+
 👨‍💻 Autor
-Desenvolvido por Maike.
+ * Desenvolvido por Maike.
 
